@@ -1,7 +1,10 @@
 {
-  "name": "create-app-template",
-  "version": "1.0.0",
+  "name": "moon-template",
+  "version": "1.0.1",
   "description": "前端开发模版",
+  "private": false,
+  "author": "lip",
+  "license": "MIT",
   "main": "bin/bot.js",
   "bin": {
     "bot": "bin/bot.js"
@@ -12,8 +15,6 @@
   "keywords": [
     "vue"
   ],
-  "author": "lip",
-  "license": "MIT",
   "dependencies": {
     "chalk": "^4.1.0",
     "child_process": "^1.0.2",

@@ -9,7 +9,7 @@ module.exports = async function () {
     }]);
     return new Promise((resolve, reject) => {
         if (source === 'Vue2') {
-            resolve("direct:https://gitee.com/ryfn-lip/template-vue2.git")
+            resolve("direct:https://gitee.com/ryfn-lip/app-template-vue2.git")
         } else {
             reject('选择模版错误')
         }
