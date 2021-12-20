@@ -5,7 +5,7 @@ module.exports = async function () {
         type: 'list',
         name: 'source',
         message: '请选择模版',
-        choices: ["Vue2"]
+        choices: ["Vue2", "uniapp"]
     }]);
     return new Promise((resolve, reject) => {
         if (source === 'Vue2') {
