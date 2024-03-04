@@ -8,7 +8,8 @@ module.exports = async function () {
       message: "请选择模版",
       choices: [
         "Vue2",
-        "Vue3",
+        "Vue3-PC",
+        "Vue3-Mobile",
         "风云-智慧城市前端开发模板",
         "uniapp-vue2",
         "uniapp-vue3",
