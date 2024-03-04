@@ -6,16 +6,27 @@ module.exports = async function () {
       type: "list",
       name: "source",
       message: "请选择模版",
-      choices: ["Vue2", "Vue3", "风云-智慧城市前端开发模板", "uniapp-vue2", "uniapp-vue3"],
-    },
+      choices: [
+        "Vue2",
+        "Vue3",
+        "风云-智慧城市前端开发模板",
+        "uniapp-vue2",
+        "uniapp-vue3",
+      ],
+    }
   ]);
   return new Promise((resolve, reject) => {
     switch (source) {
       case "Vue2":
         resolve("direct:https://gitee.com/ryfn-lip/app-template-vue2.git");
         break;
-      case "Vue3":
-        resolve("direct:https://gitee.com/ryfn-lip/app-template-vue3.git");
+      case "Vue3-PC":
+        resolve("direct:https://gitee.com/ryfn-lip/app-template-vue3.git#pc");
+        break;
+      case "Vue3-Mobile":
+        resolve(
+          "direct:https://gitee.com/ryfn-lip/app-template-vue3.git#mobile"
+        );
         break;
       case "风云-智慧城市前端开发模板":
         resolve(
@@ -26,7 +37,9 @@ module.exports = async function () {
         resolve("direct:https://gitee.com/ryfn-lip/app-template-uniapp.git");
         break;
       case "uniapp-vue3":
-        resolve("direct:https://gitee.com/ryfn-lip/app-template-uniapp.git#vue3");
+        resolve(
+          "direct:https://gitee.com/ryfn-lip/app-template-uniapp.git#vue3"
+        );
         break;
       default:
         reject("选择模版错误");
